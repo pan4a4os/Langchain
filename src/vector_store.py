@@ -1,10 +1,6 @@
-import os
-import typing
-
 from chunks import get_chunks
-from embeddings import set_embeddings, get_embeddings_documents
+from embeddings import get_embeddings_documents, set_embeddings
 from langchain.vectorstores import Chroma
-from loaders import get_document
 
 
 def set_vector_store(document: list[float], embeddings: "OpenAIEmbeddings") -> Chroma:
@@ -18,7 +14,6 @@ def set_vector_store(document: list[float], embeddings: "OpenAIEmbeddings") -> C
 def get_answer_from_vector_store(query: str) -> str or None:
     """Get matches from Chroma vector database by human request."""
 
-
     _chunks: list[str] = get_chunks()
     _embeddings: OpenAIEmbeddings = set_embeddings()
     _embeddings_documents: list[float] = get_embeddings_documents(embeddings=_embeddings, chunks=_chunks)
@@ -28,4 +23,3 @@ def get_answer_from_vector_store(query: str) -> str or None:
     result: str or None = _search_results[0].page_content
 
     return result
-

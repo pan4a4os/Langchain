@@ -9,10 +9,7 @@ def set_embeddings(_model: str = "gpt-3.5-turbo", _chunk_size: int = 1000, _max_
 
     load_dotenv()
     embeddings: OpenAIEmbeddings = OpenAIEmbeddings(
-        openai_api_key=os.environ["OPENAI_API_KEY"],
-        model=_model,
-        chunk_size=_chunk_size,
-        max_retries=_max_retries
+        openai_api_key=os.environ["OPENAI_API_KEY"], model=_model, chunk_size=_chunk_size, max_retries=_max_retries
     )
 
     return embeddings

@@ -5,7 +5,7 @@
 # Black basics: https://black.readthedocs.io/en/stable/usage_and_configuration/the_basics.html
 default_language_version:
     python: python3
-exclude: '(migrations|templates|static|fixtures)/.*'
+exclude: '(files|requirements)/.*'
 repos:
 - repo: https://github.com/pre-commit/pre-commit-hooks
   rev: v4.3.0

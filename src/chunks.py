@@ -10,7 +10,7 @@ def set_splitter(_chunk_size: int = 1000, _chunk_overlap: int = 10) -> Recursive
         chunk_size=_chunk_size,
         chunk_overlap=_chunk_overlap,
         length_function=tiktoken_length,
-        separators=["\n\n", "\n", " ", ""]
+        separators=["\n\n", "\n", " ", ""],
     )
 
     return splitter

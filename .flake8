@@ -2,7 +2,7 @@
 
 [flake8]
 
-extend-ignore = E203, F403
+extend-ignore = E203, F403, F821
 max-line-length = 120
 exclude =
     # Git

@@ -12,7 +12,6 @@ def get_document(_path: str = "../files/example.pdf") -> list[str]:
 def get_document_contents(document: list[str]) -> str:
     """Get the contents of the document."""
 
-
     document_contents: str = document[0].page_content
 
     return document_contents

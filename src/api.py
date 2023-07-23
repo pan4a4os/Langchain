@@ -1,8 +1,8 @@
-from fastapi import FastAPI
-from vector_store import get_answer_from_vector_store
-from pydantic import BaseModel
 from typing import Union
 
+from fastapi import FastAPI
+from pydantic import BaseModel
+from vector_store import get_answer_from_vector_store
 
 app = FastAPI()
 
@@ -19,7 +19,6 @@ def answer(query: str) -> dict:
     if result is None:
         result: str = "I don't know please contact with support by email support@nifty-bridge.com"
 
-    response: dict[str: str] = {"answer": result}
+    response: dict[str:str] = {"answer": result}
 
     return response
-
