@@ -1,0 +1,12 @@
+# Python cache
+*.pyc
+*/__pycache__/*
+
+# Dotenv
+src/.env
+
+# Virtual environment
+venv
+
+# Integrated development environment
+*.idea
