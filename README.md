@@ -1,17 +1,12 @@
 # Langchain
 
 
-#### Prerequisites
-- pre-commit ([pre-commit installation document](https://pre-commit.com/#install)).
-
-
 ### Cloning the repository
 Change the current working directory to the location where you want the cloned directory.\
 To clone the remote repository to your locale, use the following command in your terminal:
 ```bash
 $ git clone https://github.com/pan4a4os/Langchain/tree/a1e1e8bf3367459bbe8c7840e4fb0c9da35e3406
 ```
-
 
 --------------------------------------------------------
 
@@ -48,6 +43,8 @@ from the `src` directory.
 Press `Ctrl + C` to stop this process.
 
 --------------------------------------------------------
+## Postconditions
+- pre-commit ([pre-commit installation document](https://pre-commit.com/#install)).
 
 ### Install pre-commit hooks
 Install `pre-commit` into your git hooks:
