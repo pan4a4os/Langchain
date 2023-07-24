@@ -18,7 +18,7 @@ $ python -m venv venv
 
 After creating the `venv`, your directory should look like this:
 ```bash
-TestTask   <- Your project name
+Langchain   <- Your project name
    ├── files/..
    ├── requirements/..
    ├── src/..
