@@ -9,5 +9,5 @@ app = FastAPI()
 
 @app.get("/api/send/")
 def example(request: Request) -> dict:
-    return {"data": "okey"}
+    return {"data": "bred"}
 
